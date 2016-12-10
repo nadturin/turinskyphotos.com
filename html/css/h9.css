@@ -1,0 +1,59 @@
+.banner-menu-left{position: absolute; left: 0; top: 0; height: 100%; width: 115px; text-align: center;}
+.banner-menu-right{position: absolute; right: 0; top: 0; height: 100%; width: 115px; text-align: center;}
+.banner-menu-bottom{position: absolute; left: 0; bottom: 0; width: 100%; padding: 50px 0; text-align: center; z-index: 1;}
+.banner-menu-a{font-size: 14px; line-height: 15px; display: inline-block; vertical-align: bottom; text-transform: uppercase; color: rgba(255,255,255,.7);}
+.banner-menu-a:hover{color: #fff;}
+.async-go{font-weight: 400;}
+.async-go i{color: #989898;}
+.async-go a{position: relative;}
+.async-go .align{position: relative;}
+.async-go .label-wrapper{position: absolute; width: 100%; left: 0;}
+.async-go .rotate-wrapper{position: absolute; height: 100%; top: 0; width: 66px;}
+.async-go .title{position: absolute; text-align: center; background: #fff; z-index: 1;}
+.async-go .title > *{background: #fff; position: relative;}
+/**/
+.async-go.styl-1 .content-wrapper{padding: 130px 35px 45px 35px;}
+.async-go.styl-1 .align > a{padding-bottom: 150%; display: block;}
+.async-go.styl-1 .label-wrapper{bottom: -45px;}
+.async-go.styl-1 .rotate-wrapper{left: -66px;}
+.async-go.styl-1 .title{width: 100%; height: 130px; top: -130px;}
+.async-go.styl-1 .title:before, .async-go.styl-2 .title:before{position: absolute; left: 50%; height: 130px; width: 1px; background: #222; top: 0; content: "";}
+.async-go.styl-1 .title:after, .async-go.styl-2 .title:after{position: absolute; left: 50%; height: 30px; width: 1px; background: #fff; top: 100%; content: "";}
+.async-go.styl-1 .title > *{padding-bottom: 20px;}
+/**/
+.async-go.styl-2 .content-wrapper{padding: 45px 35px 130px 35px;}
+.async-go.styl-2 .align > a{padding-bottom: 150%; display: block;}
+.async-go.styl-2 .label-wrapper{top: -45px; text-align: right;}
+.async-go.styl-2 .rotate-wrapper{right: -66px; text-align: right;}
+.async-go.styl-2 .title{width: 100%; bottom: -130px;}
+.async-go.styl-2 .title:before{top: auto; bottom: 0;}
+.async-go.styl-2 .title:after{top: auto; bottom: 130px;}
+.async-go.styl-2 .title > *{padding-bottom: 0px; padding-top: 20px;}
+/**/
+.async-go.styl-3 .content-wrapper{padding: 0 300px 45px 35px;}
+.async-go.styl-3 .align > a{padding-bottom: 60%; display: block;}
+.async-go.styl-3 .label-wrapper{bottom: -45px;}
+.async-go.styl-3 .rotate-wrapper{left: -66px;}
+.async-go.styl-3 .title{width: 300px; right: -300px; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+.async-go.styl-3 .title:before, .async-go.styl-4 .title:before{position: absolute; top: 50%; width: 300px; height: 1px; background: #222; left: 0; content: "";}
+.async-go.styl-3 .title:after, .async-go.styl-4 .title:after{position: absolute; top: 50%; width: 30px; height: 1px; background: #fff; right: 100%; content: "";}
+.async-go.styl-3 .title > *{margin-left: 60px;}
+/**/
+.async-go.styl-4 .content-wrapper{padding: 0 35px 45px 300px;}
+.async-go.styl-4 .align > a{padding-bottom: 60%; display: block;}
+.async-go.styl-4 .label-wrapper{bottom: -45px; text-align: right;}
+.async-go.styl-4 .rotate-wrapper{right: -66px;}
+.async-go.styl-4 .title{width: 300px; left: -300px; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+.async-go.styl-4 .title:after{right: auto; left: 100%;}
+.async-go.styl-4 .title > *{margin-right: 60px;}
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.async-go{max-width: 400px; margin: 0 auto;}
+	.async-go .label-wrapper{text-align: center!important; padding-top: 15px;}
+	.async-go .rotate-wrapper{display: none;}
+	.async-go .label-wrapper, .async-go .rotate-wrapper, .async-go .title{position: relative!important; left: auto!important; right: auto!important; top: auto!important; bottom: auto!important; width: auto!important; height: auto!important; transform: none!important; -webkit-transform: none!important;}
+	.async-go .title:before, .async-go .title:after{display: none;}
+	.async-go .title{padding: 0 0 20px 0!important;}
+	.async-go .title > *{margin: 0!important; padding: 0!important;}
+	.async-go .content-wrapper{padding: 0!important;}
+}

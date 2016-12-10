@@ -1,0 +1,48 @@
+.fonts-4{font-family: 'Droid Serif', serif;}
+.fonts-4 .basement{font-family: 'Raleway', sans-serif; font-weight: 300;}
+.fonts-4 .basement h1, .fonts-4 .h1, .fonts-4 .basement h2, .fonts-4 .h2, .fonts-4 .basement h3, .fonts-4 .h3, .fonts-4 .basement h4, .fonts-4 .h4, .fonts-4 .basement h5, .fonts-4 .h5, .fonts-4 .basement h6, .fonts-4 .h6{font-family: 'Droid Serif', serif;}
+.fonts-4 .button, .fonts-4 .butt-link, .fonts-4 .input-wrapper label{font-family: 'Raleway', sans-serif;}
+
+.h-5-container, .h-5-slider{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.h-5-slider .swiper-container{height: 100%; background: #1e1e1e;}
+.h-5-slider .slider-click{z-index: 2;}
+.h-5-slider .swiper-slide{overflow: hidden;}
+.h-5-slider .entry{background-size: cover; background-position: center center; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+.h-5-slider .entry .text{text-align: center; left: 120px; right: 120px; top: 50%; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); display: none;}
+.h-5-slider .slider-click.left{left: 50px;}
+.h-5-slider .slider-click.right{right: 50px;}
+.h-5-slider .entry:before{position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; background: rgba(0,0,0,.8);}
+.h-5-slider .swiper-slide-active .entry:before{background: rgba(0,0,0,.4);}
+/*pagination slider*/
+.h-5-pagination{position: absolute; z-index: 1; height: 90px; width: 250px; top: 50%; left: 50%; margin-left: -125px; margin-top: -45px; text-align: center;}
+.pagination-slider-wrapper{position: relative; margin-top: -80px;}
+.h-5-pagination .slider-click-label{height: 90px; position: relative; cursor: pointer;}
+.h-5-pagination .slider-click-label:before, .h-5-pagination .slider-click-label:after{width: 1px; height: 20px; background: rgba(255,255,255,.3); position: absolute; left: 50%; top: -10px; content: "";}
+.h-5-pagination .slider-click-label:after{top: auto; bottom: -10px;}
+.h-5-pagination .slider-click-label:first-child:before{display: none;}
+.h-5-pagination .slider-click-label:last-child:after{display: none;}
+.h-5-pagination .slider-click-label.active{height: 250px;}
+.h-5-pagination .slider-click-label .animation{position: absolute; left: 0; top: 50%; width: 100%; height: 0;}
+.h-5-pagination .slider-click-label .align{position: absolute; left: 0; top: 0; width: 100%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+.h-5-pagination .slider-click-label .display{position: absolute; left: 0; top: 50%; transform: scale(1) translateY(-50%); -webkit-transform: scale(1) translateY(-50%); width: 100%; height: 100%;}
+.h-5-pagination .slider-click-label .animation:first-child .display{height: 255px; width: 800px; left: 50%; margin-left: -400px;}
+.h-5-pagination .slider-click-label .animation:last-child.display{height: 95px;}
+.h-5-pagination .slider-click-label .animation:first-child{transform: scale(0); -webkit-transform: scale(0);}
+.h-5-pagination .slider-click-label.active .animation:first-child{transform: scale(1); -webkit-transform: scale(1);}
+.h-5-pagination .slider-click-label .animation:last-child{transform: scale(1); -webkit-transform: scale(1);}
+.h-5-pagination .slider-click-label.active .animation:last-child{transform: scale(0); -webkit-transform: scale(0);}
+body.loaded .h-5-pagination .slider-click-label, body.loaded .h-5-pagination .slider-click-label .animation, body.loaded .h-5-pagination .pagination-slider-wrapper{-webkit-transition:all 0.6s cubic-bezier(0.8, 0, 0.2, 1); transition:all 0.6s cubic-bezier(0.8, 0, 0.2, 1);}
+/*titles*/
+.h-5-pagination .slide-title-small{font-size: 16px; line-height: 30px; color: rgba(255,255,255,.7); font-weight: 700;}
+.h-5-pagination .slider-click-label:hover .slide-title-small{color: rgba(255,255,255,1);}
+
+/* Tablets (>=768px)*/
+@media (max-width: 991px) {
+	.h-5-slider .entry .text{display: block;}
+	.h-5-pagination{display: none;}
+	.h-5-slider .entry:before{background: rgba(17,17,17,.3);}
+}
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.h-5-slider .entry .text{left: 15px; right: 15px;}
+}

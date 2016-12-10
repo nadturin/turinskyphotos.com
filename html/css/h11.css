@@ -1,0 +1,20 @@
+.swiper-grid-go{height: 100%; margin: 0 60px; position: relative;}
+.slider-grid-item{float: left; width: 50%; height: 50%; border: 3px #fff solid; background: #f2f2f2; padding: 25px; position: relative;}
+.slider-grid-thumbnail{float: left; width: 50%; height: 100%; position: relative; background-position: center center;}
+.slider-grid-description{height: 100%; margin-left: 50%;}
+@media (min-width: 1600px) {
+	.slider-grid-description .valign-text-wrapper{padding: 0 50px;}
+}
+@media (min-width: 1200px) {
+	.slider-grid-item:nth-child(2n+1) .slider-grid-thumbnail{float: right;}
+	.slider-grid-item:nth-child(2n+1) .slider-grid-description{margin-left: 0; margin-right: 50%; text-align: right;}
+}
+@media (max-width: 1199px){
+	.slider-grid-thumbnail{float: none; display: block; width: auto;}
+	.slider-grid-description{display: none;}
+}
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.swiper-grid-go{margin: 0;}
+	.slider-grid-item{padding: 0;}
+}

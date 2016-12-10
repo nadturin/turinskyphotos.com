@@ -1,0 +1,41 @@
+.fonts-3{font-family: 'Montserrat', sans-serif;}
+.fonts-3 .basement{font-family: 'Raleway', sans-serif; font-weight: 300;}
+.fonts-3 .basement h1, .fonts-3 .h1, .fonts-3 .basement h2, .fonts-3 .h2, .fonts-3 .basement h3, .fonts-3 .h3, .fonts-3 .basement h4, .fonts-3 .h4, .fonts-3 .basement h5, .fonts-3 .h5, .fonts-3 .basement h6, .fonts-3 .h6{font-family: 'Montserrat', sans-serif;}
+.fonts-3 .button, .fonts-3 .butt-link, .fonts-3 .input-wrapper label{font-family: 'Raleway', sans-serif;}
+
+.h-4-container{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.h-4-slider{position: absolute; left: 115px; top: 115px; right: 115px; bottom: 115px;}
+.h-4-slider .swiper-container{height: 100%;}
+.h-4-slider .entry{overflow: hidden;}
+.h-4-slider .background-wrapper{background-size: cover; background-position: center center;}
+.h-4-slider .background-wrapper:before{background: rgba(0,0,0,.5); position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: "";}
+body:not(.mobile) .h-4-slider .entry:hover .background-wrapper{transform: scale(1.2); -webkit-transform: scale(1.2); transform-origin: 50% 100%; -webkit-transform-origin: 50% 100%;}
+body:not(.mobile) .h-4-slider .entry:hover .background-wrapper:before{background: rgba(0,0,0,.7);}
+.h-4-slider .entry .text{position: absolute; left: 50px; right: 50px; bottom: 40px;}
+.h-4-slider .entry .tags .title{color: rgba(255,255,255,.7); display: inline-block; padding-left: 30px; margin-right: 15px; position: relative; line-height: 15px;}
+.h-4-slider .entry .tags .title:before{width: 15px; height: 1px; position: absolute; left: 0; top: 50%; background: currentColor; content: "";}
+@media (min-width: 992px) {
+	.h-4-slider .entry:hover .text{bottom: 135px;}
+	.h-4-slider .entry:hover .slide-title{margin-bottom: 25px;}
+	.h-4-slider .entry:hover .slide-description{margin-bottom: 25px;}
+}
+.h-4-slider .swiper-butt{width: 50px; height: 50px; background-color: #fff; background-size: auto auto;}
+.h-4-slider .swiper-butt-prev{left: -80px;}
+.h-4-slider .swiper-butt-next{right: -80px;}
+.h-4-slider:hover .swiper-butt-prev{left: 30px;}
+.h-4-slider:hover .swiper-butt-next{right: 30px;}
+.h-4-slider-navigation{width: 115px; position: fixed; left: 0; top: 115px; bottom: 115px; font-size: 14px; line-height: 22px; color: #222; text-transform: uppercase;}
+.h-4-slider-navigation.right{left: auto; right: 0;}
+body.min-height .h-4-slider-navigation{height: 100%; position: absolute; left: -115px; top: 0; bottom: 0;}
+body.min-height .h-4-slider-navigation.right{left: auto; right: -115px;}
+
+/* Tablets (>=768px)*/
+@media (max-width: 991px) {
+	.h-4-slider .swiper-butt-prev{left: 30px;}
+	.h-4-slider .swiper-butt-next{right: 30px;}
+}
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.h-4-slider{left: 15px; right: 15px; top: 65px; bottom: 15px;}
+	.h-4-slider .entry .text{left: 15px; right: 15px; bottom: 60px;}
+}

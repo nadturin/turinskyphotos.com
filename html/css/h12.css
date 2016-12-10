@@ -1,0 +1,19 @@
+.fonts-6{font-family: 'Montserrat', sans-serif;}
+.fonts-6 .basement{font-family: 'Montserrat', sans-serif;}
+.fonts-6 .basement h1, .fonts-6 .h1, .fonts-6 .basement h2, .fonts-6 .h2, .fonts-6 .basement h3, .fonts-6 .h3, .fonts-6 .basement h4, .fonts-6 .h4, .fonts-6 .basement h5, .fonts-6 .h5, .fonts-6 .basement h6, .fonts-6 .h6{font-family: 'Abril Fatface', cursive;}
+.fonts-6 nav{font-family: 'Abril Fatface', cursive;}
+
+.h-14-container{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.h-14-slider{position: absolute; left: 50px; top: 115px; right: 50px; bottom: 115px;}
+.h-14-slider .swiper-container{height: 100%;}
+.h-14-slider .swiper-slide{overflow: hidden; background-size: cover; background-position: center center;}
+
+.banner-text-bottom.align-1{position: absolute; left: 45px; bottom: 35px; width: 30%;}
+.banner-text-bottom.align-2{position: absolute; left: 35%; width: 30%; bottom: 35px; text-align: center;}
+.banner-text-bottom.align-3{position: absolute; right: 45px; bottom: 35px; width: 30%; text-align: right;}
+.banner-text-bottom.align-3 .inside-align{display: inline-block; text-align: left;}
+
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.h-14-slider{left: 15px!important; right: 15px!important; bottom: 15px; top: 65px;}
+}

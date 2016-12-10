@@ -1,0 +1,24 @@
+.fonts-5{font-family: 'Inconsolata';}
+.fonts-5 .basement{font-family: 'Inconsolata';}
+.fonts-5 .basement h1, .fonts-5 .h1, .fonts-5 .basement h2, .fonts-5 .h2, .fonts-5 .basement h3, .fonts-5 .h3, .fonts-5 .basement h4, .fonts-5 .h4, .fonts-5 .basement h5, .fonts-5 .h5, .fonts-5 .basement h6, .fonts-5 .h6{font-family: 'Share Tech Mono';}
+.fonts-5 nav{font-family: 'Share Tech Mono';}
+.fonts-5 .butt.styl-3{font-size: 15px; letter-spacing: 1px;}
+@media (min-width: 992px) {
+	.fonts-5 header nav>ul>li>a{font-size: 13px;}
+}
+
+.h-7-container, .h-7-slider{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.h-7-slider .slide-title{letter-spacing: 3px;}
+.h-7-slider .slide-description{max-width: 570px; margin-left: auto; margin-right: auto;}
+.h-7-slider .project-logo{text-align: center;}
+.h-7-slider .project-logo img{display: inline-block; vertical-align: bottom; width: auto; max-height: 107px;}
+
+.h-7-slider .text-animation{opacity: 0; transform: translateY(50px); -webkit-transform: translateY(50px); -webkit-transition:all 0.6s cubic-bezier(0.7, 0, 0.3, 1); transition:all 0.6s cubic-bezier(0.7, 0, 0.3, 1);}
+.h-7-slider .current .text-animation{opacity: 1; transform: translateY(0px); -webkit-transform: translateY(0px);}
+.h-7-slider .current .text-animation.delay-1{-webkit-transition-delay: .1s; transition-delay: .1s;}
+.h-7-slider .current .text-animation.delay-2{-webkit-transition-delay: .2s; transition-delay: .2s;}
+.h-7-slider .current .text-animation.delay-3{-webkit-transition-delay: .3s; transition-delay: .3s;}
+/*Phones (<768px)*/
+@media (max-width: 767px) {
+	.h-7-slider .slide-title{font-size: 30px;}
+}
